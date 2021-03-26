@@ -73,11 +73,24 @@ describe('Heroes Page', () => {
 
     it('should be able to edit an existing hero', () => {
         const index = 0;
+        const heroToEdit = HEROES[index];
+        const editedDescription = 'Warped Queen'
+
         cy.get('[data-testid=button]').filter(':contains("Edit")').eq(index).click();
 
+        cy.SetupInputFieldsCommand();
+
+        cy.get('@Description').clear().type(editedDescription);
+        cy.putCommand('/heroes', {...heroToEdit, description: editedDescription});
+        cy.get('[data-testid=button]').contains('Save').click();
+
+        cy.get('[data-testid=card-name]').should('have.length', HEROES.length);
+        cy.get('[data-testid=card-description]').eq(index).should('contain', 'Warped');
 
 
-    })
+    });
+
+
 
 
 })

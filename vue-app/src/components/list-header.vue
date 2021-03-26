@@ -55,6 +55,7 @@ export default defineComponent({
       <i class="fas fa-plus" aria-hidden="true"></i>
     </button>
     <button
+        data-testid="refresh-button"
       class="button refresh-button"
       @click="handleRefresh"
       aria-label="refresh"

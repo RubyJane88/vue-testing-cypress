@@ -4,7 +4,7 @@
     {
       "id": "HeroAslaug",
       "name": "Aslaug",
-      "description": "warrior queen"
+      "description": "drag queen"
     },
     {
       "id": "HeroBjorn",
@@ -30,6 +30,11 @@
       "id": "HeroThora",
       "name": "Thora Town-hart",
       "description": "daughter of Earl Herrauðr of Götaland"
+    },
+    {
+      "id": "A5wJyhW",
+      "name": "",
+      "description": ""
     }
   ],
   "villains": [
