@@ -86,12 +86,6 @@ describe('Heroes Page', () => {
 
         cy.get('[data-testid=card-name]').should('have.length', HEROES.length);
         cy.get('[data-testid=card-description]').eq(index).should('contain', 'Warped');
-
-
     });
-
-
-
-
-})
+});
 
