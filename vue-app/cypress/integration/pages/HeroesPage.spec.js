@@ -35,6 +35,7 @@ describe('Heroes Page', () => {
 
         cy.get('[data-testid=card]').should('have.length', HEROES.length);
 
+
     });
 
     it('should delete a hero when Yes is clicked', () => {

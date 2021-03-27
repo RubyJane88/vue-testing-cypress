@@ -41,6 +41,7 @@ export default defineComponent({
 <template>
   <ul class="list">
     <li
+      data-testid="villains-card"
       v-for="(villain, index) in villains"
       :key="villain.id"
       role="presentation"
